@@ -1,0 +1,141 @@
+//1.Leia o número de passageiros adultos e crianças.
+let ClasseEscolha="Executiva"
+let Idade="Criança"
+let adultos=20
+let criancas=9
+let AdultosExecultivos=5
+let CriançasExecultivas=4
+ 
+console.log(`A quantidade de crianças na viagem é ${criancas} e de adultos é ${adultos}`)
+console.log("")
+console.log("*************************************************")
+//2. Solicite que o usuário insira a região de destino (Norte ou Sul do Brasil) ou o continente  (Ásia, Europa, África) e a classe de voo
+//(Econômica ou Executiva).
+ 
+console.log("Insira a região de seu destino")
+console.log("*************************************************")
+console.log("")
+// Fiz isso para deixar o terminal de maneira mais organizada e visivél aos olhos
+ 
+let regiao="Norte"
+let continente=""
+let Voo="Internacional"
+ 
+//3.Calcule o custo total da viagem com base no número de passageiros, no destino e na classe escolhida.
+   
+    if (Voo="Nacional") {  
+    }if (regiao=="Sul" & ClasseEscolha=="Executiva") {
+    let Executiva=3400
+    console.log(`Região Escolhida foi ${regiao}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Executiva}`)
+    console.log("")
+   
+    let TotalCrianças=(CriançasExecultivas*Executiva)
+    let TotalAdultos=(AdultosExecultivos*Executiva)
+    let total=(TotalAdultos + TotalCrianças)
+    console.log(`O total da viagem vai dar ${total}`)
+     }
+        else if(regiao=="Sul" && ClasseEscolha=="Econômica"){
+        let Econômica=2200
+        console.log(`Região Escolhida foi ${regiao}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Econômica}`)
+        let TotalCrianças=(criancas*Econômica)
+        let TotalAdultos=(adultos*Econômica)
+        let total=(TotalAdultos + TotalCrianças)
+       console.log(`O total da viagem vai dar ${total}`)
+   
+     }
+ 
+    //Separando apenas o norte do sul para não confundir
+ 
+    if (Voo="Nacional" & regiao=="Norte" && ClasseEscolha=="Executiva" && Idade=="Adulto" ) {
+    let AdultExecul=2500*1.20
+    console.log(`Região Escolhida foi ${regiao},classe escolhida foi a ${ClasseEscolha} você é ${Idade} e o preço é de ${AdultExecul}` )
+    let total=(adultos*AdultExecul)
+    console.log(`O total da viagem vai dar ${total}`)
+    }
+    else if (regiao=="Norte" && ClasseEscolha=="Executiva" && Idade=="Criança"){
+    let CriançaExecul=2200*1.10
+    console.log(`Região Escolhida foi ${regiao}, classe escolhida foi a ${ClasseEscolha} você é ${Idade} e o preço é de ${CriançaExecul}` )
+    let total=(criancas*CriançaExecul)
+    console.log(`O total da viagem vai dar ${total}`)
+    }
+    if (regiao=="Norte" && ClasseEscolha=="Econômica" && Idade=="Adulto" ) {
+    let AdultEco=1200
+    console.log(`Região Escolhida foi ${regiao}, classe escolhida foi a ${ClasseEscolha} você é ${Idade} e o preço é de ${AdultEco}` )
+    let total=(adultos*AdultEco)
+    console.log(`O total da viagem vai dar ${total}`)
+    }
+    else if(regiao=="Norte" && ClasseEscolha=="Econômica" && Idade=="Criança" ){
+        let CriancaEco=900
+        console.log(`Região Escolhida foi ${regiao}, classe escolhida foi a ${ClasseEscolha} voce é ${Idade} e o preço é de ${CriancaEco}`)
+        let total=(criancas*CriancaEco)
+        console.log(`O total da viagem vai dar ${total}`)
+    }
+     
+    //Internacional
+   
+    if (Voo="Internacional") {  
+    }if (continente=="Asía" & ClasseEscolha=="Executiva") {
+    let Executiva=5000
+    console.log(`O continente escolhido foi ${continente}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Executiva}`)
+    console.log("")
+   
+    let TotalCrianças=(CriançasExecultivas*Executiva)
+    let TotalAdultos=(AdultosExecultivos*Executiva)
+    let total=(TotalAdultos + TotalCrianças)
+    console.log(`O total da viagem vai dar ${total}`)
+    console.log(`O total da viagem vai dar ${total}`)
+     }
+        else if(continente=="Asía" && ClasseEscolha=="Econômica"){
+        let Econômica=3600
+        console.log(`O continente escolhido foi ${continente}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Econômica}`)
+        let TotalCrianças=(criancas*Econômica)
+        let TotalAdultos=(adultos*Econômica)
+        let total=(TotalAdultos + TotalCrianças)
+       console.log(`O total da viagem vai dar ${total}`)
+     }
+ 
+     //Parte Europeia
+   
+     if (Voo="Internacional") {  
+    }if (continente=="Europa" & ClasseEscolha=="Executiva") {
+    let Executiva=5800
+    console.log(`O continente escolhido foi ${continente}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Executiva}`)
+    console.log("")
+   
+    let TotalCrianças=(CriançasExecultivas*Executiva)
+    let TotalAdultos=(AdultosExecultivos*Executiva)
+    let total=(TotalAdultos + TotalCrianças)
+    console.log(`O total da viagem vai dar ${total}`)
+    console.log(`O total da viagem vai dar ${total}`)
+     }
+        else if(continente=="Europa" && ClasseEscolha=="Econômica"){
+        let Econômica=7300
+        console.log(`O continente escolhido foi ${continente}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Econômica}`)
+        let TotalCrianças=(criancas*Econômica)
+        let TotalAdultos=(adultos*Econômica)
+        let total=(TotalAdultos + TotalCrianças)
+        console.log(`O total da viagem vai dar ${total}`)
+     }
+   
+     //Parte Africana
+ 
+     if (Voo="Internacional") {  
+    }if (continente=="Afríca" & ClasseEscolha=="Executiva") {
+    let Executiva=3900
+    console.log(`O continente escolhido foi ${continente}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Executiva}`)
+    console.log("")
+   
+    let TotalCrianças=(CriançasExecultivas*Executiva)
+    let TotalAdultos=(AdultosExecultivos*Executiva)
+    let total=(TotalAdultos + TotalCrianças)
+    console.log(`O total da viagem vai dar ${total}`)
+    console.log(`O total da viagem vai dar ${total}`)
+     }
+        else if(continente=="Europa" && ClasseEscolha=="Econômica"){
+        let Econômica=2200
+        console.log(`O continente escolhido foi ${continente}, classe escolhida foi a ${ClasseEscolha} e você está pagando ${Econômica}`)
+         let TotalCrianças=(criancas*Econômica)
+         let TotalAdultos=(adultos*Econômica)
+         let total=(TotalAdultos + TotalCrianças)
+        console.log(`O total da viagem vai dar ${total}`)
+     }
