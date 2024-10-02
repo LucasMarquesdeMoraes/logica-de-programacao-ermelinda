@@ -1,0 +1,128 @@
+let criancas= 2
+let adultos= 2
+let localN= "norte"  //Declaracão das strings 
+let localS="Sul"     
+let localAs= "Asiático"  
+let localE= "Europeu"   
+let localAf= "Africano"
+let classe1= "economica"
+let classe2= "executiva"
+let economicaA= 1200.00  //Declaração dos valores de cada local e suas classes  
+let economicaC=900
+let porceA= 2500*1.20
+let porceC= 2200*1.10
+let econoSul= 2200.00
+let execuSul=3400.00
+let econoAs= 3600.00
+let execuAs= 5000.00
+let econoE= 5800.00
+let execuE=7300.00
+let econoAf=2200.00
+let execuAf=3900.00
+
+
+console.log ("Olá, aqui é a Asa , sua companhia aérea de confiança")
+console.log ("Voos Nacionais ")
+if (localN== "norte" ) {   // Utilizando IF se acaso o local desejado for norte será executado os console.log que vem logo em seguida 
+if (classe1=="economica") { //Novamente utilizando IF caso seja classe econômica (Colocando dentro do IF as variáveis declaradas logo a cima, com dois sinais de igualdade para não haver erros caso não seja estritamente iguais)
+console.log ("O destino da viagem será",localN)
+console.log("A classe do voo será", classe1)
+console.log("Quantidade de passageiros adultos na classe econômica são",adultos)
+console.log("Quantidade de passageiros crianças na classe econômica são", criancas)
+console.log("O custo total da viagem é de R$",(economicaA*adultos)+(economicaC*criancas)) //somando com os nomes das variáveis para assim se trocar de número depois da igualdade a soma mudará também 
+
+//Logo o código todo segue o mesmo padrão , somente mudando o nome de algumas variáveis para não dar erro de identificação
+} 
+}
+console.log ("____________________________________________________________")
+if (localN=="norte") {
+if (classe2=="executiva") {
+ console.log ("O destino da viagem será", localN)
+ console.log("A classe do voo será", classe2)
+ console.log ("Quantidade de passageiros adultos na classe executiva são",adultos)
+ console.log("Quantidade de passageiros crianças na classe executiva são", criancas)
+ console.log ("O custo total da viagem é de R$", (porceA*adultos)+(porceC*criancas))
+}
+}
+console.log("_____________________________________________________________")
+if (localS=="Sul") {
+if (classe1=="economica") {
+console.log ("O destino da viagem será", localS)
+console.log("A classe do voo será",classe1)
+console.log ("Quantidade de passageiros adultos na classe econômica são", adultos )
+console.log ("Quantidade de passageiros crianças na classe econômica são",criancas)
+console.log("O custo total da viagem é de R$", (econoSul*adultos)+(econoSul*criancas))
+}  
+}
+console.log("________________________________________________________________")
+if (localS=="Sul") {
+if (classe2=="executiva") {
+console.log ("O destino da viagem será",localS)
+console.log("A classe do voo será",classe2)
+console.log ("Quantidade de passageiros adultos na classe executiva são",adultos)
+console.log("Quantidade de passageiros crianças na classe executiva são",criancas)
+ console.log ("O custo total da viagem é de R$",(execuSul*adultos)+(execuSul*criancas) )
+}
+} console.log("_____________________________________________________________")
+console.log ("Voos Internacionais")
+if (localAs=="Asiático") {
+if (classe1=="economica") {
+console.log("O destino da viagem será",localAs)
+console.log("A classe do voo será",classe1)
+console.log("Quantidade de passageiros adultos na classe econômica são", adultos)
+console.log ("Quantidade de passageiros crianças na classe econômica são", criancas)
+console.log ("O custo total da viagem é de R$", (econoAs*adultos)+ (econoAs*criancas))
+}
+}
+console.log("___________________________________________________________")
+if (localAs=="Asiático") {
+if (classe2=="executiva") {
+console.log("O destino da viagem será",localAs)
+console.log("A classe do voo será",classe2)
+console.log("Quantidade de passageiros adultos na classe executiva são",adultos)
+console.log("Quantidade de passageiro crianças na classe executiva são",criancas)
+console.log("O custo total da viagem é de R$",(execuAs*adultos)+ (execuAs*criancas))
+    
+}
+}
+console.log("___________________________________________________________")
+if (localE=="Europeu") {
+if (classe1=="economica") {
+console.log("O destino da viagem será",localE)
+console.log("A classe do voo será", classe1)
+console.log ("Quantidade de passageiros adultos na classe econômica são", adultos)
+console.log ("Quantidade de passageiros crianças na classe econômica são", criancas)
+console.log ("O custo total da viagem é de R$ ",(econoE*adultos)+(econoE*criancas))
+          }
+    
+}
+console.log("_____________________________________________________________")
+if (localE=="Europa"){
+if (classe2=="executiva") {
+console.log("O destino da viagem será",localE)
+console.log("A classe do voo será", classe2)
+console.log ("Quantidade de passageiros adultos na classe executiva são", adultos)
+console.log ("Quantidade de passageiros crianças na classe executiva são", criancas)
+console.log ("O custo total da viagem é de R$ ",(execuE*adultos)+(execuE*criancas))
+}
+}
+console.log("____________________________________________________________")
+if (localAf=="Africano"){
+if (classe1=="economica"){
+onsole.log("O destino da viagem será",localAf)
+console.log("A classe do voo será", classe1)
+console.log ("Quantidade de passageiros adultos na classe econômica são", adultos)
+console.log ("Quantidade de passageiros crianças na classe econômica são", criancas)
+console.log ("O custo total da viagem é de R$ ",(econoAf*adultos)+(econoAf*criancas))
+}
+}
+console.log("_____________________________________________________________")
+if (localAf=="Africano"){
+if (classe2=="executiva"){
+onsole.log("O destino da viagem será",localAf)
+console.log("A classe do voo será", classe2)
+console.log ("Quantidade de passageiros adultos na classe executiva são", adultos)
+console.log ("Quantidade de passageiros crianças na classe executiva são", criancas)
+console.log ("O custo total da viagem é de R$ ",(execuAf*adultos)+(execuAf*criancas))
+}
+}
