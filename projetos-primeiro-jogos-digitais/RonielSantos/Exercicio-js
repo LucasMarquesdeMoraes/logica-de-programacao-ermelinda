@@ -1,0 +1,110 @@
+
+    const norecoadu = 1200
+    const norecocri = 900
+
+    const norexeadu = (2500*1.20)
+    const norexecri = (1.10*2200)
+
+    const sulecocri = 2200
+    const sulecoadu = 2200
+
+    const sulexecri = 3400
+    const sulexeadu = 3400
+
+    const asiaeco = 3600
+    const asiaexe = 5000
+
+    const euroeco = 5800
+    const euroexe = 7300
+
+    const afrieco = 2200
+    const afriexe = 3900
+
+    const passcria = 2
+    const passedu = 2
+
+   
+    let classe= "Executiva"
+    let Localizacao="Europa"
+
+    if (Localizacao==="Norte" && classe==="Economica"){
+        console.log("Seu destino é norte");
+        console.log("Sua classe é Economica");
+        console.log("O valor da total da passagem das criança é de",(passcria*norecocri));
+        console.log("O valor total das passagem dos adultos é de",(passedu*norecoadu));
+        console.log("O valor total das passagem é de",(passcria*norecocri),(passedu*norecoadu));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Norte" & classe==="Executiva") {
+        console.log("Seu destino é norte");
+        console.log("Sua classe é Executiva");
+        console.log("O valor da total da passagem das criança é de",(passcria*norexecri));
+        console.log("O valor total das passagem dos adultos é de",(passedu*norexeadu));
+        console.log("O valor total das passagem é de",(passcria*norexecri)+(passedu*norexeadu));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Sul" & classe==="Economica") {
+        console.log("Seu destino é Sul");
+        console.log("Sua classe é Economica");
+        console.log("O valor da total da passagem das criança é de",(passcria*sulecocri));
+        console.log("O valor total das passagem dos adultos é de",(passedu*sulecoadu));
+        console.log("O valor total das passagem é de",(passcria*sulecocri)+(passedu*sulecoadu));
+        console.log("O valor da total da passagem é de",(sulecoadu*passedu)+(sulecocri*passcria));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Sul" & classe==="Executiva") {
+        console.log("Seu destino é norte");
+        console.log("Sua classe é Executiva");
+        console.log("O valor da total da passagem das criança é de",(passcria*sulexecri));
+        console.log("O valor total das passagem dos adultos é de",(passedu*sulexeadu));
+        console.log("O valor total das passagem é de",(passcria*sulexecri)+(passedu*sulexeadu));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de passageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Africa" & classe==="Economica") {
+        console.log("Seu destino é Africa");
+        console.log("Sua classe é Economica");
+        console.log("O valor da total da passagem das criança é de",(passcria*afrieco));
+        console.log("O valor total das passagem dos adultos é de",(passedu*afriexe));
+        console.log("O valor total das passagem é de",(passcria*norexecri)+(passedu*afrieco));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Africa" & classe==="Executiva") {
+        console.log("Seu destino é Africa");
+        console.log("Sua classe é Executiva");
+        console.log("O valor da total da passagem das criança é de",(passcria*afriexe));
+        console.log("O valor total das passagem dos adultos é de",(passedu*afriexe));
+        console.log("O valor total das passagem é de",(passcria*afriexe)+(passedu*afriexe));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Asia" & classe==="Economica") {
+        console.log("Seu destino é Asia");
+        console.log("Sua classe é Economica");
+        console.log("O valor da total da passagem das criança é de",(passcria*asiaeco));
+        console.log("O valor total das passagem dos adultos é de",(passedu*asiaeco));
+        console.log("O valor total das passagem é de",(passcria*asiaeco)+(passedu*asiaeco));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Asia" & classe==="Executiva") {
+        console.log("Seu destino é Asia");
+        console.log("Sua classe é executiva");
+        console.log("O valor da total da passagem das criança é de",(passcria*asiaexe));
+        console.log("O valor total das passagem dos adultos é de",(passedu*asiaexe));
+        console.log("O valor total das passagem é de",(passcria*asiaexe)+(passedu*asiaexe));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+     else if (Localizacao==="Europa" & classe==="Economica") {
+        console.log("Seu destino é Europa");
+        console.log("Sua classe é Economica");
+        console.log("O valor da total da passagem das criança é de",(passcria*euroeco));
+        console.log("O valor total das passagem dos adultos é de",(passedu*euroeco));
+        console.log("O valor total das passagem é de",(passcria*euroeco)+(passedu*euroeco));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
+    else if (Localizacao==="Europa" & classe==="Executiva") {
+        console.log("Seu destino é Europa");
+        console.log("Sua classe é Executiva");
+        console.log("O valor da total da passagem das criança é de",(passcria*euroexe));
+        console.log("O valor total das passagem dos adultos é de",(passedu*euroexe));
+        console.log("O valor da total da passagem é de",(euroexe*passedu)+(euroexe*passcria));
+        console.log("A quantidade de passageiro criança é de",passcria,"A Quantidade de paszsageiro adulto é de",passedu)
+    }
