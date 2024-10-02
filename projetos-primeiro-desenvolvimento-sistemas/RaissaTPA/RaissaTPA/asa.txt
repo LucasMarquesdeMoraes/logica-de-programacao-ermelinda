@@ -1,0 +1,44 @@
+Em resposta à crise econômica, a companhia aérea "Asas" está implementando uma nova estratégia para aumentar a receita, oferecendo voos domésticos e internacionais. A companhia aérea tem diferentes estruturas de preços para diferentes regiões e classes de voo.
+
+Voos domésticos
+Os voos domésticos são divididos em duas regiões e duas classes
+
+
+Norte do Brasil:
+
+Classe Econômica:
+  Adulto: R$ 500,00
+  Criança: R$ 400,00
+Classe Executiva:
+  Adulto: R$ 500,00 + 20%
+  Criança: R$ 400,00 + 10%
+
+
+Sul do Brasil:
+
+Classe Econômica:
+  Adulto ou Criança: R$ 200,00
+Classe Executiva:
+  Adulto ou Criança: R$ 400,00
+
+Voos Internacionais
+Os voos internacionais são divididos por continentes, cada um com preços fixos para adultos e crianças:
+
+
+Continente asiático:
+
+Classe Econômica: R$ 1.600,00
+Classe Executiva: R$ 2.000,00
+
+
+Continente europeu:
+
+Classe Econômica: R$ 1.800,00
+Classe Executiva: R$ 2.300,00
+
+
+Continente africano:
+
+Classe Econômica: R$ 1.200,00
+Classe Executiva: R$ 1.900,00
+
